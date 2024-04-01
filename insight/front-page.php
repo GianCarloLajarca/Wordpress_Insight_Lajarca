@@ -101,24 +101,24 @@
           <div class="contacts__form">
             <input type="text" placeholder="Name" />
             <input type="text" placeholder="Email" />
-            <textarea name="" id="" cols="30" rows="10">Message</textarea>
-            <a href="" class="btn bg--primary">Send Message</a>
+            <textarea name="" id="" cols="30" rows="10"><?php echo get_field ('contacts_message')?></textarea>
+            <a href="" class="btn bg--primary"><?php echo get_field ('contacts_btn')?></a>
           </div>
           <div class="contacts__social">
             <table>
               <tr>
                 <td><i class="fa-solid fa-map-pin"></i></td>
-                <td>Baloc Road, Brgy. San Ignacio, San Pablo City, Laguna</td>
+                <td><?php echo get_field ('contacts_address')?></td>
               </tr>
 
               <tr>
                 <td><i class="fa-solid fa-phone"></i></td>
-                <td>+639-123456789</td>
+                <td><?php echo get_field ('contacts_number')?></td>
               </tr>
 
               <tr>
                 <td><i class="fa-solid fa-envelope"></i></td>
-                <td>kamotecue@gmail.com</td>
+                <td><?php echo get_field ('contacts_email')?></td>
               </tr>
             </table>
           </div>

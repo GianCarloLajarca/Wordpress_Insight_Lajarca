@@ -35,7 +35,7 @@
               </ul>
             </ul>
 
-            <a href=""><img src="./img/logo.png" alt="" /></a>
+            <a href=""><img src="<?php echo get_field('header_logo')?>" alt="" /></a>
           </div>
           <div class="toggle__menu">
             <span></span>
